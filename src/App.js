@@ -9,12 +9,12 @@ import { useMemo } from 'react'
 
 function App() {
   const { data, error, isLoading } = useDataLoader(
-    '/backendless-test/tabs.json',
+    '/backendless-test/tabs.json'
   )
-
+  // console.log('isLoading', isLoading)
   const sortedTabs = useMemo(
     () => data.toSorted((a, b) => a.order - b.order),
-    [data],
+    [data]
   )
 
   if (error) {
@@ -25,6 +25,10 @@ function App() {
     return <div>Loading...</div>
   }
 
+  if (data.length === 0) {
+    return <div>Data is empty...</div>
+  }
+
   return (
     <HashRouter>
       <Routes>
@@ -32,11 +36,11 @@ function App() {
           path="/:tabId"
           element={
             <TabsLayout tabs={sortedTabs}>
-              <TabLoader tabs={sortedTabs} />
+              <TabLoader tabs={sortedTabs}/>
             </TabsLayout>
           }
         />
-        <Route index element={<Navigate to={`/${sortedTabs[0].id}`} />} />
+        <Route index element={<Navigate to={`/${sortedTabs[0].id}`}/>}/>
       </Routes>
     </HashRouter>
   )
