@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkbackendless_test=self.webpackChunkbackendless_test||[]).push([[888,418],{888:function(e,s,a){a.r(s);var c=a(418),t=a(184);s.default=function(){return(0,t.jsxs)("div",{className:"dummy-wrapper",children:[(0,t.jsx)("div",{className:"dummy-header",children:(0,t.jsx)("h2",{children:"Charts"})}),(0,t.jsx)("img",{src:c,alt:"chart"})]})}},418:function(e,s,a){e.exports=a.p+"static/media/chart.38cbd84b66464a9ea54b.jpg"}}]);
+//# sourceMappingURL=888.f64b9ef6.chunk.js.map
