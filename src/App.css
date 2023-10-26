@@ -1,0 +1,145 @@
+#root {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.navigation-tabs-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  height: 100vh;
+  background-color: #f6f8fa;
+}
+
+.nav-logo-block {
+  padding: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  color: black;
+  background-color: #ffffff;
+}
+
+.navigation-img {
+  width: 50px;
+  height: 50px;
+}
+
+.main {
+  display: flex;
+  background-color: #f6f8fa;
+  height: calc(100vh - 100px);
+}
+
+.navigate-tabs {
+  height: 100%;
+  background-color: #1b1c32;
+  border-radius: 0 40px 0 0;
+  color: #c4c4d9;
+}
+
+.navigate-tabs h2 {
+  margin: 25px 20px;
+}
+
+.navigate-tabs li {
+  display: flex;
+  margin: 0 10px;
+  width: 120px;
+  padding: 6px 10px;
+  height: 50px;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+
+.selected {
+  background-color: #464ed2;
+  border-radius: 0 20px 0 20px;
+  transform: translateX(20px);
+}
+
+.navigation-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navigate-tabs a {
+  text-decoration: none;
+  color: #c4c4d9;
+  cursor: pointer;
+}
+
+.content-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.dummy-wrapper {
+  padding: 25px;
+  width: 100%;
+}
+
+.dummy-wrapper img {
+  width: 500px;
+}
+
+.dummy-header {
+  margin: 0 0 22px 0;
+  padding: 15px;
+  background-color: white;
+  width: 100%;
+}
+
+.dummy-header h2 {
+  font-size: 26px;
+}
+
+.dummy-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 16px;
+  font-family: sans-serif;
+  border: 1px solid #ccc;
+}
+
+.dummy-table thead th {
+  background-color: #f2f2f2;
+}
+
+.dummy-table th,
+.dummy-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.dummy-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.dummy-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dummy-list li {
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dummy-list li:hover {
+  background-color: #2980b9;
+}
